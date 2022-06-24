@@ -1,39 +1,42 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.tsx"],
+  content: [
+    './src/**/*.tsx'
+  ],
   theme: {
-    colors: {
-      zinc: "#18181b",
-      zincwhite: "#f4f4f5 ",
-      blue: "#1fb6ff",
-      purple: "#7e5bef",
-      pink: "#ff49db",
-      orange: "#ff7849",
-      green: "#13ce66",
-      yellow: "#ffc82c",
-      "gray-dark": "#273444",
-      gray: "#8492a6",
-      "gray-light": "#d3dce6",
-    },
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
-    },
-    fontFamily: {
-      sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
-    },
     extend: {
-      spacing: {
-        "8xl": "96rem",
-        "9xl": "128rem",
+      backgroundImage: {
+        blur: 'url(/src/assets/blur-background.png)'
       },
-      borderRadius: {
-        "4xl": "2rem",
+      fontFamily: {
+        sans: 'Roboto, sans-serif',
+      },
+      colors: {
+        green: {
+          300: '#00B37E',
+          500: '#00875F',
+          700: '#015F43',
+        },
+        blue: {
+          500: '#81D8F7',
+        },
+        orange: {
+          500: '#FBA94C',
+        },
+        red: {
+          500: '#F75A68',
+        },
+        gray: {
+          100: '#E1E1E6',
+          200: '#C4C4CC',
+          300: '#8D8D99',
+          500: '#323238',
+          600: '#29292E',
+          700: '#121214',
+          900: '#09090A'
+        }
       },
     },
   },
-};
+  plugins: [],
+}
